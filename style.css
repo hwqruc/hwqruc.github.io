@@ -1,0 +1,152 @@
+/* 定义极简色彩变量 */
+:root {
+    --bg-color: #fafafa; /* 极浅的灰白，比纯白更温和 */
+    --text-color: #2c2c2c; /* 深灰，避免纯黑的刺眼 */
+    --light-text: #999999; /* 辅助信息颜色 */
+    --line-color: #eaeaea; /* 分割线颜色 */
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    /* 优先使用苹果和现代系统的无衬线字体，保持现代感 */
+    font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Helvetica Neue", sans-serif;
+    line-height: 1.8;
+    padding: 8vw 5vw; /* 响应式四周留白，增强呼吸感 */
+    display: flex;
+    justify-content: center; /* 居中对齐 */
+}
+
+main {
+    max-width: 640px; /* 限制最大阅读宽度，像读一本书 */
+    width: 100%;
+}
+
+/* 头部样式 */
+header {
+    margin-bottom: 80px;
+}
+
+h1 {
+    font-size: 1.2rem;
+    font-weight: 500;
+    letter-spacing: 2px;
+}
+
+.subtitle {
+    color: var(--light-text);
+    font-size: 0.9rem;
+    margin-top: 5px;
+}
+
+/* 想法流样式 */
+.monologue {
+    margin-bottom: 80px;
+}
+
+.monologue article {
+    margin-bottom: 50px;
+}
+
+.monologue time {
+    display: block;
+    color: var(--light-text);
+    font-size: 0.85rem;
+    margin-bottom: 12px;
+    /* 日期使用等宽字体，增加一种“打字机”的文艺复古感 */
+    font-family: "Courier New", Courier, monospace; 
+}
+
+.monologue p {
+    font-size: 1rem;
+    text-align: justify; /* 两端对齐，使文字块边缘整齐 */
+}
+
+/* 档案区域样式 */
+.archive {
+    margin-bottom: 80px;
+}
+
+.archive h2 {
+    font-size: 1rem;
+    margin-bottom: 20px;
+    font-family: "Courier New", Courier, monospace;
+}
+
+.archive ul {
+    list-style: none;
+}
+
+.archive li {
+    margin-bottom: 10px;
+}
+
+.archive a {
+    color: var(--text-color);
+    text-decoration: none;
+    border-bottom: 1px solid var(--line-color);
+    padding-bottom: 2px;
+    transition: border-color 0.3s ease;
+}
+
+.archive a:hover {
+    border-bottom-color: var(--text-color);
+}
+
+/* 私密树洞表单样式 */
+.treehole {
+    border-top: 1px solid var(--line-color);
+    padding-top: 60px;
+    margin-bottom: 40px;
+}
+
+.treehole h2 {
+    font-size: 1rem;
+    margin-bottom: 8px;
+}
+
+.hint {
+    color: var(--light-text);
+    font-size: 0.85rem;
+    margin-bottom: 24px;
+}
+
+textarea {
+    width: 100%;
+    height: 120px;
+    background: transparent;
+    border: 1px solid var(--line-color);
+    padding: 15px;
+    font-family: inherit;
+    font-size: 1rem;
+    color: var(--text-color);
+    resize: vertical; /* 只允许上下拉伸 */
+    outline: none;
+    transition: border-color 0.3s ease;
+}
+
+textarea:focus {
+    border-color: var(--text-color); /* 输入时边框变深色 */
+}
+
+button {
+    margin-top: 16px;
+    background: transparent;
+    border: 1px solid var(--text-color);
+    color: var(--text-color);
+    padding: 8px 32px;
+    font-size: 0.9rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+button:hover {
+    background: var(--text-color);
+    color: var(--bg-color);
+}

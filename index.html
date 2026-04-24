@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>你的名字 | 碎片与回音</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body><!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WHIM. </title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="noise-overlay"></div>
+
+  <main>
+    <!-- ************ HERO：标题与签名。标题可替换为你的手写字图片（见CSS注释） ************ -->
+    <header class="hero">
+      <h1 class="glitch-text" data-text="WHIM.">WHIM.</h1>
+      <p class="hero-sub">NOISE CANCELLED. JUST SIGNALS.</p>
+    </header>
+
+    <!-- ************ ABOUT：个人标识区。用一张图代替千言万语 ************ -->
+    <section class="about">
+      <h2 class="section-label">IDENTITY // 印</h2>
+      <div class="identity-mark">
+        <!-- ************ 替换为你的个人标识图片：手写签名/头像/印章 ************ -->
+        <img src="image/my_signature.png" alt="我的标识" class="signature-img">
+        <p class="identity-caption">—— 可以点击试一试会出现什么</p>
+      </div>
+    </section>
+
+    <!-- ************ STATUS：实时状态（点击可切换） ************ -->
+    <section class="status">
+      <h2 class="section-label">STATUS // 实时</h2>
+      <div class="status-bar">
+        <span class="status-chip" id="readingStatus">📖 无阅读</span>
+        <span class="status-chip" id="listeningStatus">🎧 在听：《I Still Want Your Love》</span>
+        <span class="status-chip" id="thinkingStatus">💭 在想：快点长大</span>
+      </div>
+      <p class="status-hint">点击状态标签可随机切换</p>
+    </section>
+
+    <!-- ************ MONOLOGUE：碎碎念 / 想法流（每条可插入手绘插图） ************ -->
+    <section class="monologue">
+      <h2 class="section-label">MONOLOGUE // 独白</h2>
+
+      <article class="thought-block">
+        <time>2026.04.24 // 17:01 PM</time>
+        <p>爱不是找一个人来填补你的完整，而是去跟另一个人分享你的完整。</p>
+        <!-- ************ 替换为你的手绘插图或随手拍 ************ -->
+        <figure class="thought-illo">
+          <img src="image/img-0424.jpg" alt="随手摘抄">
+        </figure>
+      </article>
+      
+      <!-- 日志条目 1 ———— 包含图片插入位 -->
+      <article class="thought-block">
+        <time>2026.04.23 // 15:30 PM</time>
+        <p>今天的课真的很无聊。</p>
+        <!-- ************ 替换为你的手绘插图或随手拍 ************ -->
+      </article>
+
+      <!-- 日志条目 2 ———— 纯文字示例，可按需添加图片 -->
+      <article class="thought-block">
+        <time>2026.04.23 // 02:14 AM</time>
+        <p>人生来即是为了受苦。人生八苦，是为生，老，病，死，求不得，怨憎会，爱别离，五阴炽盛。</p>
+      </article>
+
+      <!-- 日志条目 3 ———— 包含图片插入位 -->
+      <article class="thought-block">
+        <time>2026.04.20 // 16:30 PM</time>
+        <p>想不通一些事情，不知道该怎么做。</p>
+      </article>
+
+      <!-- ************ 复制上面的 thought-block 可增加更多日志 ************ -->
+    </section>
+
+    <!-- ************ VISIONS：视觉切片 / 个人摄影/画稿网格 ************ -->
+    <section class="visions">
+      <h2 class="section-label">FRAGMENTS // 切片</h2>
+      <div class="masonry-grid">
+        <!-- ************ 替换每一张图片的 src 为你自己的摄影或画稿 ************ -->
+        <div class="vision-item wide"><img src="image/IMG_4135.JPG" alt="信号1"></div>
+        <div class="vision-item tall"><img src="image/IMG_6500.JPG" alt="摄影1"></div>
+        <div class="vision-item"><img src="image/IMG_6954.JPG" alt="信号2"></div>
+        <div class="vision-item wide"><img src="image/IMG_6734.JPGg" alt="画稿1"></div>
+        <!-- ************ 可继续添加更多 .vision-item，支持 .wide 和 .tall 类 ************ -->
+      </div>
+      <p class="grid-hint">✧ 悬停试一试 ✧</p>
+    </section>
+
+    <!-- ************ LIBRARY：工具箱 / 常用物（可选，无图片需求，可改文字） ************ -->
+    <section class="library">
+      <h2 class="section-label">LIBRARY // 工具箱</h2>
+      <div class="library-grid">
+        <div class="lib-card">
+          <div class="lib-icon">📐</div>
+          <h3>在写小说</h3>
+          <p>可以期待</p>
+        </div>
+        <div class="lib-card">
+          <div class="lib-icon">📐</div>
+          <h3>项目成功</h3>
+          <p>如果有相信是不是就总会成功</p>
+        </div>
+        <div class="lib-card">
+          <div class="lib-icon">📚</div>
+          <h3>《撞煞》</h3>
+          <p>抛开cp不说，这是一部很厉害的作品</p>
+        </div>
+        <div class="lib-card">
+          <div class="lib-icon">🎥</div>
+          <h3>设计design</h3>
+          <p>想设计点属于自己的东西，却不知如何下手</p>
+        </div>
+        <div class="lib-card">
+          <div class="lib-icon">☕</div>
+          <h3>剪视频</h3>
+          <p>AI好难控制。</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ************ SOUND CORNER：你的声音/音乐嵌入 ************ -->
+    <section class="sound-corner">
+      <h2 class="section-label">CORNER // 你的频率</h2>
+      <div class="embed-container">
+        <!-- ************ 替换为你自己的嵌入代码（B站/网易云/个人录音等） ************ -->
+        <iframe 
+          src="https://player.bilibili.com/player.html?bvid=BV1GJ411x7h7&page=1&high_quality=1" 
+          allowfullscreen 
+          loading="lazy">
+        </iframe>
+      </div>
+      <p class="embed-hint">🎵 上方为占位，替换成你的vlog、弹奏或歌单。</p>
+    </section>
+
+    <!-- ************ QUOTES：摘录墙。可以放你手写句子的扫描图 ************ -->
+    <section class="quotes">
+      <h2 class="section-label">QUOTES // 摘录</h2>
+      <div class="quote-block">
+        <!-- ************ 如果想用图片代替文字，取消下面注释并替换图片路径 ************ -->
+        <!-- <img src="images/quote-handwrite-1.png" alt="手写摘录" class="quote-img"> -->
+        <p>“我们通晓地球到星辰的广袤空间，却在地面到头骨之间迷失了方向。”</p>
+        <span class="quote-source">—— 辛波斯卡</span>
+      </div>
+      <div class="quote-block">
+        <p>那时，时间和空间还没有名字，物理法则还在寂静中孕育。无数个宇宙像气泡一样从奇点涌出。有的膨胀到永恒，有的坍缩回虚无。有的世界里没有光，有的世界里没有重力，有的世界里时间倒着流淌，人类从坟墓里出生，走向母亲的子宫。
+但无论在哪个宇宙，无论物理法则如何扭曲，无论历史被重写了多少遍——有一件事从未改变</p>
+        <span class="quote-source">透露一点小说</span>
+      </div>
+    </section>
+
+    <!-- ************ LOG：更新日志（文字为主） ************ -->
+   
+
+    <!-- ************ ECHOES：树洞表单 ************ -->
+    <section class="treehole">
+      <h2 class="section-label">ECHOES // 树洞</h2>
+      <p class="treehole-hint">写下你想说的，它将悄无声息地发送至我的邮箱。</p>
+      <!-- ⚠️ 重要：替换 YOUR_FORM_ID 为 Formspree 给你的真实 ID -->
+      <form action="https://formsubmit.co/17308115131@163.com" method="POST">
+        <textarea name="message" placeholder="Type something..." required></textarea>
+        <button type="submit">SEND TO THE VOID</button>
+      </form>
+    </section>
+
+    <!-- ************ FOOTER：页脚 + 个人印章图片 ************ -->
+    <footer>
+      <!-- ************ 替换为你的个人印章/手绘logo图片 ************ -->
+      <div class="footer-stamp">
+        <img src="images/my-stamp.png" alt="我的印章">
+      </div>
+      <p class="footer-text">© 2026 WHIM. — 保持诚实，真心最重要</p>
+    </footer>
+  </main>
+
+  <!-- ************ 交互脚本：彩蛋 + 状态切换 + 签名图点击彩蛋 ************ -->
+  <script>
+    (function() {
+      // ---------- 彩蛋：点击空白处浮现短句 ----------
+      const hiddenThoughts = [
+        "Keep breathing.", "我在啊", "有不开心吗", "可以和我讲讲",
+        "一切都在改变。", "Read more, compute less.", "真心最重要", "来找我玩",
+        "去喝杯咖啡吧。", "陪我玩陪我玩", "有在想我吗", "// 404 NOT FOUND", "别想太多。"
+      ];
+      document.addEventListener('click', function(e) {
+        if (['A', 'BUTTON', 'IMG', 'TEXTAREA', 'INPUT', 'IFRAME'].includes(e.target.tagName)) return;
+        const textNode = document.createElement('span');
+        textNode.className = 'floating-thought';
+        textNode.textContent = hiddenThoughts[Math.floor(Math.random() * hiddenThoughts.length)];
+        textNode.style.left = e.pageX + 'px';
+        textNode.style.top = e.pageY + 'px';
+        document.body.appendChild(textNode);
+        setTimeout(() => textNode.remove(), 4000);
+      });
+
+      // ---------- 状态标签随机切换 ----------
+      const readingItems = ['📖 在读：《夜晚的潜水艇》', '📖 在读：《 》', '📖 在读：《爱》', '📖 在读：一堆论文'];
+      const listeningItems = ['🎧 在听：《再回首》', '🎧 在听：《雪崩》', '🎧 在听：《who knows》', '🎧 在听：一些日语歌'];
+      const thinkingItems = ['💭 在想：今天晚饭吃什么', '💭 在想：多就睡觉', '💭 在想：如何保持专注', '💭 在想：好想见到你啊'];
+      function setupStatusChip(elementId, itemsArray) {
+        const el = document.getElementById(elementId);
+        if (!el) return;
+        let index = 0;
+        el.addEventListener('click', function() {
+          index = (index + 1) % itemsArray.length;
+          el.textContent = itemsArray[index];
+        });
+      }
+      setupStatusChip('readingStatus', readingItems);
+      setupStatusChip('listeningStatus', listeningItems);
+      setupStatusChip('thinkingStatus', thinkingItems);
+
+      // ---------- 彩蛋：点击个人标识图片随机切换 alt 文本（或显示提示） ----------
+      const sigImg = document.querySelector('.signature-img');
+      const sigCaption = document.querySelector('.identity-caption');
+      const altMessages = ['be unique。', '手写的温度。', '独一无二。', '你好呀。', '画押。'];
+      if (sigImg) {
+        sigImg.addEventListener('click', function() {
+          const randomMsg = altMessages[Math.floor(Math.random() * altMessages.length)];
+          if (sigCaption) sigCaption.textContent = `—— ${randomMsg}`;
+          // 也可以弹出一个短暂的 toast，但这里直接更新说明文字
+        });
+      }
+
+    })();
+  </script>
+</body>
+</html>
+    <main>
+        <header>
+            <h1>Your Name</h1>
+            <p class="subtitle">A minimal space for thoughts & fragments.</p>
+        </header>
+
+        <section class="monologue">
+            <article>
+                <time>2026.04.23</time>
+                <p>抛开了复杂的前端框架，回到最原始的 HTML 标签。代码的极简，也是内心的留白。最近在读计算社会科学的文献，发现有些底层逻辑其实和搭网站很像，去芜存菁。</p>
+            </article>
+            <article>
+                <time>2026.04.20</time>
+                <p>今天大理的天气很好，可乐在院子里睡了一下午。整理了一些 AIGC 的视觉资产，准备晚点放上来。</p>
+            </article>
+        </section>
+
+        <section class="archive">
+            <h2>Archive</h2>
+            <ul>
+                <li><a href="#" target="_blank">Fact-Guard : 虚假信息治理检测引擎</a></li>
+                <li><a href="#" target="_blank">「一轴」: Video Essays</a></li>
+            </ul>
+        </section>
+
+        <section class="treehole">
+            <h2>留白</h2>
+            <p class="hint">写下的字会直接发往我的邮箱，页面不留痕。你可以说任何话，或者什么都不说。</p>
+            
+            <form action="https://formspree.io/f/你的专属后缀" method="POST">
+                <textarea name="message" placeholder="..." required></textarea>
+                <input type="hidden" name="_next" value="https://你的用户名.github.io">
+                <button type="submit">发送</button>
+            </form>
+        </section>
+    </main>
+</body>
+</html>

@@ -40,7 +40,7 @@
       <h2 class="section-label">STATUS // 实时</h2>
       <div class="status-bar">
         <span class="status-chip" id="readingStatus">📖 无阅读</span>
-        <span class="status-chip" id="listeningStatus">🎧 在听：《I Still Want Your Love》</span>
+        <span class="status-chip" id="listeningStatus">🎧 在听：《同花顺》</span>
         <span class="status-chip" id="thinkingStatus">💭 在想：快点长大</span>
       </div>
       <p class="status-hint">点击状态标签可随机切换</p>
@@ -49,6 +49,18 @@
     <!-- ************ MONOLOGUE：碎碎念 / 想法流（每条可插入手绘插图） ************ -->
     <section class="monologue">
       <h2 class="section-label">MONOLOGUE // 独白</h2>
+    
+      <article class="thought-block">
+        <time>2026.04.27 // 13:48 PM</time>
+        <p>不知道说什么了。</p>
+        </figure>
+      </article>
+
+      <article class="thought-block">
+        <time>2026.04.27 // 13:48 PM</time>
+        <p>算命中🔮</p>
+        </figure>
+      </article>
 
       <article class="thought-block">
         <time>2026.04.24 // 17:01 PM</time>
@@ -133,12 +145,12 @@
       <div class="embed-container">
         <!-- ************ 替换为你自己的嵌入代码（B站/网易云/个人录音等） ************ -->
         <iframe 
-          src="https://player.bilibili.com/player.html?bvid=BV1GJ411x7h7&page=1&high_quality=1" 
+          src="https://player.bilibili.com/player.html?bvid=BV1ENy3YLEA6&page=1&high_quality=1"
           allowfullscreen 
           loading="lazy">
         </iframe>
       </div>
-      <p class="embed-hint">🎵 上方为占位，替换成你的vlog、弹奏或歌单。</p>
+      <p class="embed-hint">🎵 </p>
     </section>
 
     <!-- ************ QUOTES：摘录墙。可以放你手写句子的扫描图 ************ -->
@@ -202,9 +214,9 @@
       });
 
       // ---------- 状态标签随机切换 ----------
-      const readingItems = ['📖 在读：《夜晚的潜水艇》', '📖 在读：《 》', '📖 在读：《爱》', '📖 在读：一堆论文'];
-      const listeningItems = ['🎧 在听：《再回首》', '🎧 在听：《雪崩》', '🎧 在听：《who knows》', '🎧 在听：一些日语歌'];
-      const thinkingItems = ['💭 在想：今天晚饭吃什么', '💭 在想：多就睡觉', '💭 在想：如何保持专注', '💭 在想：好想见到你啊'];
+      const readingItems = ['📖 在读：《夜晚的潜水艇》', '📖 在读：《 》', '📖 在读：《谷歌。。。》', '📖 在读：一堆论文'];
+      const listeningItems = ['🎧 在听：《再回首》', '🎧 在听：《雪崩》', '🎧 在听：《who knows》', '🎧 在听：rapeter'];
+      const thinkingItems = ['💭 在想：好想一键长大', '💭 在想：睡觉睡觉', '💭 在想：如何保持专注', '💭 在想：考试考好一点'];
       function setupStatusChip(elementId, itemsArray) {
         const el = document.getElementById(elementId);
         if (!el) return;
@@ -221,7 +233,7 @@
       // ---------- 彩蛋：点击个人标识图片随机切换 alt 文本（或显示提示） ----------
       const sigImg = document.querySelector('.signature-img');
       const sigCaption = document.querySelector('.identity-caption');
-      const altMessages = ['be unique。', '手写的温度。', '独一无二。', '你好呀。', '画押。'];
+      const altMessages = ['be unique。', '手写的温度。', '独一无二。', '你好呀。', '有想我吗'];
       if (sigImg) {
         sigImg.addEventListener('click', function() {
           const randomMsg = altMessages[Math.floor(Math.random() * altMessages.length)];

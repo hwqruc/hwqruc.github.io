@@ -40,8 +40,8 @@
       <h2 class="section-label">STATUS // 实时</h2>
       <div class="status-bar">
         <span class="status-chip" id="readingStatus">📖 无阅读</span>
-        <span class="status-chip" id="listeningStatus">🎧 在听：《同花顺》</span>
-        <span class="status-chip" id="thinkingStatus">💭 在想：快点长大</span>
+        <span class="status-chip" id="listeningStatus">🎧 在听：《任我行》</span>
+        <span class="status-chip" id="thinkingStatus">💭 在想：什么时候有钱买prada</span>
       </div>
       <p class="status-hint">点击状态标签可随机切换</p>
     </section>
@@ -49,6 +49,12 @@
     <!-- ************ MONOLOGUE：碎碎念 / 想法流（每条可插入手绘插图） ************ -->
     <section class="monologue">
       <h2 class="section-label">MONOLOGUE // 独白</h2>
+        
+      <article class="thought-block">
+        <time>2026.08.18 // 16:1 PM</time>
+        <p>某位同学给我发了个问句，但是这个mail是不能回复的，忘了说了</p>
+        </figure>
+      </article>
 
       <article class="thought-block">
         <time>2026.04.28 // 15:57 PM</time>
@@ -80,6 +86,12 @@
       </article>
       
       <!-- 日志条目 1 ———— 包含图片插入位 -->
+      <!-- 日志条目 2 ———— 纯文字示例，可按需添加图片 -->
+      <article class="thought-block">
+        <time>2026.08.18 // 16:13 PM</time>
+        <p>在北京就睡不好，希望午睡别总是被埋在梦里</p>
+      </article>  
+        
       <article class="thought-block">
         <time>2026.04.23 // 15:30 PM</time>
         <p>今天的课真的很无聊。</p>
@@ -121,8 +133,8 @@
       <div class="library-grid">
         <div class="lib-card">
           <div class="lib-icon">📐</div>
-          <h3>在写小说</h3>
-          <p>可以期待</p>
+          <h3>在想快点去攀岩</h3>
+          <p>期待野攀</p>
         </div>
         <div class="lib-card">
           <div class="lib-icon">📐</div>
@@ -131,18 +143,18 @@
         </div>
         <div class="lib-card">
           <div class="lib-icon">📚</div>
-          <h3>《撞煞》</h3>
-          <p>抛开cp不说，这是一部很厉害的作品</p>
+          <h3>徒步</h3>
+          <p>好想徒步</p>
         </div>
         <div class="lib-card">
           <div class="lib-icon">🎥</div>
           <h3>设计design</h3>
-          <p>想设计点属于自己的东西，却不知如何下手</p>
+          <p>no time</p>
         </div>
         <div class="lib-card">
           <div class="lib-icon">☕</div>
           <h3>剪视频</h3>
-          <p>AI好难控制。</p>
+          <p>现在变成要拍视频了.....</p>
         </div>
       </div>
     </section>
@@ -152,11 +164,7 @@
       <h2 class="section-label">CORNER // 你的频率</h2>
       <div class="embed-container">
         <!-- ************ 替换为你自己的嵌入代码（B站/网易云/个人录音等） ************ -->
-        <iframe 
-          src="https://player.bilibili.com/player.html?bvid=BV1ENy3YLEA6&page=1&high_quality=1"
-          allowfullscreen 
-          loading="lazy">
-        </iframe>
+        <iframe src="//player.bilibili.com/player.html?isOutside=true&aid=115202834041416&bvid=BV1fjpAzmE1T&cid=32381994364&p=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"></iframe>"
       </div>
       <p class="embed-hint">🎵 </p>
     </section>
@@ -189,7 +197,7 @@
     <!-- ************ ECHOES：树洞表单 ************ -->
     <section class="treehole">
       <h2 class="section-label">ECHOES // 树洞</h2>
-      <p class="treehole-hint">写下你想说的，它将悄无声息地发送至我的邮箱。</p>
+      <p class="treehole-hint">写下你想说的，它将悄无声息地发送至我的邮箱。但是我并不能回复，所以需要回复请留下你的联系方式</p>
       <!-- ⚠️ 重要：替换 YOUR_FORM_ID 为 Formspree 给你的真实 ID -->
       <form action="https://formsubmit.co/17308115131@163.com" method="POST">
         <textarea name="message" placeholder="Type something..." required></textarea>
@@ -201,7 +209,7 @@
     <footer>
       <!-- ************ 替换为你的个人印章/手绘logo图片 ************ -->
       <div class="footer-stamp">
-        <img src="images/my-stamp.png" alt="我的印章">
+        <img src="images/my-stamp.png" alt="nothing">
       </div>
       <p class="footer-text">© 2026 WHIM. — 保持诚实，真心最重要</p>
     </footer>
@@ -229,8 +237,8 @@
 
       // ---------- 状态标签随机切换 ----------
       const readingItems = ['📖 在读：《夜晚的潜水艇》', '📖 在读：《 》', '📖 在读：《谷歌。。。》', '📖 在读：一堆论文'];
-      const listeningItems = ['🎧 在听：《再回首》', '🎧 在听：《雪崩》', '🎧 在听：《who knows》', '🎧 在听：rapeter'];
-      const thinkingItems = ['💭 在想：好想一键长大', '💭 在想：睡觉睡觉', '💭 在想：如何保持专注', '💭 在想：考试考好一点'];
+      const listeningItems = ['🎧 在听：《一只猫两个人》', '🎧 在听：《雪崩》', '🎧 在听：《狗狗》', '🎧 在听：rapeter（还在听）'];
+      const thinkingItems = ['💭 在想：好想一键长大', '💭 在想：睡觉睡觉', '💭 在想：a good opportunity', '💭 在想：good luck'];
       function setupStatusChip(elementId, itemsArray) {
         const el = document.getElementById(elementId);
         if (!el) return;
@@ -247,7 +255,7 @@
       // ---------- 彩蛋：点击个人标识图片随机切换 alt 文本（或显示提示） ----------
       const sigImg = document.querySelector('.signature-img');
       const sigCaption = document.querySelector('.identity-caption');
-      const altMessages = ['be unique。', '手写的温度。', '独一无二。', '你好呀。', '有想我吗'];
+      const altMessages = ['be unique。', 'LaFerrari。', 'be unique。', 'susu福福。', '有想我吗'];
       if (sigImg) {
         sigImg.addEventListener('click', function() {
           const randomMsg = altMessages[Math.floor(Math.random() * altMessages.length)];
